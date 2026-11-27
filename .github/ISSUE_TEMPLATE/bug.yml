@@ -1,0 +1,26 @@
+name: Rapport de bug
+description: Signaler un dysfonctionnement SIGIS
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: team
+    attributes:
+      label: Équipe concernée
+      options:
+        - Frontend
+        - Backend
+        - Database
+        - Intégration
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Décrire le comportement observé et attendu.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Reproduction
